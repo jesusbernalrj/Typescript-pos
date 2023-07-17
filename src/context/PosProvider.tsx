@@ -8,8 +8,9 @@ interface Props {
 export const PosProvider = ({ children }: Props) => {
   const [data, setData] = useState("1");
 
-  const updateData = (newData: string) => {
-    setData(newData);
+  const updateData = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newValue = event.target.value;
+    setData(newValue);
   };
 
   return (
@@ -18,5 +19,4 @@ export const PosProvider = ({ children }: Props) => {
     </PosContext.Provider>
   );
 };
-
 
