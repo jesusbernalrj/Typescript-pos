@@ -1,0 +1,787 @@
+body{
+  margin:0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+:root {
+  --main-color: #035a85;
+  --bg-color: #035a85;
+  --text-color: #000;
+  --color-131921: #131921;
+  --color-febd69: #febd69;
+  --color-3b4149:  #3b4149;
+  --color-232f3e: #232f3e;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  border-color: inherit;
+}
+gap-10{
+gap: 10px
+}
+
+
+
+/* header  */
+
+.header-top-strip{
+  background-color: var(--color-131921);
+  border-bottom: 1px solid var(--color-3b4149);
+  position: absolute;
+ width: 100%;
+  margin: 0;
+}
+.header-top-button{
+  background-color: #131921;
+  align-items: center;
+  border: none;
+  font-size: 1.3rem;
+  color: white;
+}
+.header-bottom .header-bottom-text {
+font-size: 2rem;
+color: red;
+}
+@media (max-width: 1350.98px){
+  .header-bottom a,
+  .header-bottom button{
+   display: none;
+  }
+}
+.dropdown-menu .dropdown-items{
+display: none;
+margin: 0;
+}
+@media (max-width: 767.98px){
+.dropdown-menu .dropdown-items{
+ display: flex;
+ text-decoration: none;
+ justify-content: center;
+ color: var(--text-color);
+ font-size: 1rem;
+ margin: 6px;
+ 
+  }
+}
+
+.header{
+  background-color: var(--main-color)  
+}
+
+.header-upper .input-group-text{
+background-color: var(--color-febd69);
+}
+.header-upper .header-upper-text{
+color: var(--color-131921);
+}
+.header-upper .form-select{
+ color: var(--color-131921)
+ 
+}
+
+.header-upper .form-select option{
+  color: var(--color-131921);
+  background-color: white;
+}
+.header-pass{
+  background-color: var(--color-131921);
+  border: none;
+  
+ 
+}
+.header-pas{
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+  
+  
+}
+.header-pas .header-pass-text{
+  background-color: var(--color-232f3e);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  
+}
+
+.header-cliente{
+  color: var(--color-131921);
+}
+
+.dropdown-toggle-1{
+  border: 1px solid var(--color-131921);
+  padding: .4rem;
+}
+
+
+/*  main  */
+
+.main-producto img {
+  width: 180px;
+}
+.main-producto-text h3{
+text-align: center;
+}
+.main-producto-text p{
+text-align: center;
+margin-bottom: 0;
+}
+
+.image-product img{
+width: 140px;
+
+}
+
+.product-text{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.product-texto p{
+  margin: 0;
+}
+
+
+/* footer  */
+.footer{
+  background-color: var(--color-131921);
+position: absolute;
+bottom: 0;
+width: 100%;
+
+}
+
+@media (max-width: 1200px){
+  .footer{
+    display: none;
+  }
+
+}
+
+.footer button{
+font-size: 2.5rem;
+padding: 1rem;
+color: white;
+text-transform: uppercase;
+border: 1px solid white;
+}
+
+
+
+
+/*  formulario   */
+
+.formulario{
+display: flex;
+flex-direction: column;
+}
+
+.formulario label{
+font-size: 1.2rem;
+margin-bottom: 5px;
+}
+.formulario select{
+text-align: center;
+padding: 5px;
+margin-bottom: 5px;
+border: none;
+}
+.formulario input[type='submit']{
+border: none;
+background-color: black;
+color: white;
+border-radius: 10px;
+padding: 5px;
+margin-bottom: 5px;
+transition-property: background-color;
+transition-duration: 300ms;
+}
+.formulario input[type='submit']:hover{
+  background-color: orange;
+  color: black;
+}
+.carrito {
+  color: black;
+}
+
+.header-wrapper{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+  justify-items: center;
+  
+}
+
+@media (max-width: 1150.98px){
+  .header-wrapper{
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 800.98px){
+  .header-wrapper{
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+}
+@media (max-width: 600.98px){
+  .header-wrapper{
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    
+    
+  }
+}
+@media (max-width: 600.98px){
+.image-product {
+    display: flex;
+    justify-content: center;
+}
+}
+@media (max-width: 600.98px){
+  .image-product img{
+  width: 180px
+
+  }
+  }
+
+@media (max-width: 800.98px){
+.header-upper-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+
+
+}
+}
+@media (max-width: 800.98px){
+  .header-upper-form select{
+    width: 350px;
+    height: 35px;
+   margin: 7px 0 0 0;
+   
+  }
+}
+.header-upper-form select{
+  width: 350px;
+  height: 35px;
+ 
+ 
+
+}
+@media (max-width: 800.98px){
+.dropdown{
+  margin: 1rem 0 0 0;
+  width: 200px;
+  
+ }
+}
+@media (max-width: 800.98px){
+.input-group{
+ width: 350px;
+ 
+}
+}
+
+
+@media (max-width: 700.98px){
+.footer-final{
+display: flex;
+}
+}
+@media (min-width: 850px){
+.main-button{
+display: none;
+}
+}
+.main-button{
+  position: sticky;
+  top: 3rem;
+left: 70rem;
+  width: 50px;
+}
+/*modal */
+.ReactModalPortal > div{
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity .2s ease-in-out;
+  z-index: 999;
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 620px;
+  max-width: 1500px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.modal-usuario {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 620px;
+  max-width: 1500px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.modal-ticket {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 820px;
+  max-width: 2000px;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.colum{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.table-product{
+  background-color: #F9FAFB;
+  border-radius: 10px;
+  overflow: scroll;
+  
+}
+.carrito-grid{
+  position: absolute;
+  top: 32rem;
+  left: 0rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+}
+
+.venta-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
+}
+.table-producto {
+  position: sticky;
+  top: 3rem;
+  
+}
+
+.pasador{
+  background-color: #000;
+margin: 0;
+}
+.my-component {
+  background: white;
+  background-color: white;
+  
+}
+
+.fullscreen-enabled .my-component {
+  background: white !important;
+  background-color: white !important;
+}
+
+.fullscreen{
+  background-color: white;
+}
+.btn-main{
+margin-top: 3rem;
+}
+.btn-main:hover{
+  margin-top: 3rem;
+ 
+  }
+
+
+.simple-keyboard {
+  max-width: 850px;
+}
+.descuentos{
+  width: 80%;
+ height: 2.3rem;
+}
+.descuentos-check{
+  width: 20%;
+}
+
+.enlaceReturn{
+  position: absolute;
+  top: 50rem;
+  left: 110rem;
+  font-size: 1.4rem;
+}
+
+.select-user{
+  color: white;
+  background-color: #000;
+}
+
+.sugerencias {
+  padding: 5px;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 60px;
+  width: 500px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+  max-height: 300px;
+  overflow: auto;
+  margin-top: 16px;
+  left: 1;
+  right: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-autosuggest__suggestions-list{
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+.react-autosuggest__input{
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+.pos{
+  color: var(--color-febd69);
+  font-weight: bold;
+}
+.users{
+  display: flex;
+  justify-content: space-between;
+ }
+
+  
+  .form-descuentos{
+    margin-left: 2rem;
+    width: 30%;
+  }
+
+  .button-pasador{
+    margin-top: 6rem;
+  }
+ .formato{
+  width: 22%;
+ }
+ .numeros{
+  width: 15%;
+ }
+ .moneda{
+  width: 15%;
+ }
+ .iditem{
+  width: 5%;
+ }
+ .totalmxm{
+  position: absolute;
+  top: 34rem;
+ }
+ .totalusd{
+  position: absolute;
+  top: 34rem;
+  left: 15rem;
+ }
+ .totalall{
+  position: absolute;
+  top: 34rem;
+  left: 30rem;
+ }
+.totalmontoInicial{
+  position: absolute;
+  top: 34rem;
+  left: 45rem;
+}
+.totalmontoSalidas{
+  position: absolute;
+  top: 34rem;
+  left: 60rem;
+}
+.totalventa{
+  position: absolute;
+  top: 34rem;
+  left: 60rem;
+}
+ .boton-pasador{
+  background-color: #000;
+  color: white;
+ }
+ .teclado{
+  position: absolute;
+  top: 37rem;
+  left: 2rem;
+  width: 75%;
+ }
+ .teclado-size{
+  width: 25%;
+  height: 25%;
+ }
+
+ .teclado-usuario{
+  position: absolute;
+  top: 20rem;
+  left: 70rem;
+  width: 100%;
+  height: 25%;
+
+ }
+
+ 
+ .formContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+
+}
+.formWrapper{
+  background-color: #131921;
+  background-size: cover;
+  padding: 4rem 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.formWrapper form{
+display: flex;
+flex-direction: column;
+gap: 15px;
+align-items: center;
+
+
+}
+
+.formWrapper input{
+  border-radius: 5px;
+  padding: 7px;
+  width: 25rem;
+  font-size: 1rem;
+ 
+}
+.formWrapper label{
+    font-size: 1rem;
+}
+.formWrapper h1{
+  color: white;
+font-size: 2rem;
+font-weight: bold;
+
+}
+.formWrapper h4{
+  color: white;
+  font-size: 1.4rem;
+
+  }
+.form-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+@media (min-width: 1500px){
+  .icons-shopping{
+    display: none;
+  }
+  }
+@media (max-width: 1500px){
+  .icons-shopping{
+    position: sticky;
+    top: 3rem;
+  }
+  }
+  .button-imprimir{
+    position: absolute;
+    top: 30rem;
+    left: 18rem;
+  }
+
+  .checkbox-moneda{
+    margin-top: 1.5rem;
+   
+  }
+  
+  .ticket-quantity{
+  margin-top: 5rem;
+  }
+  .total-print{
+    font-size: 15px;
+  }
+  .producto-quantity{
+    margin-left: 2rem;
+  }
+  .cierre-title{
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .cierre-name{
+
+    font-weight: 700;
+  }
+  .cierre-caja {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cierre-caja th,
+  .cierre-caja td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .button-salidas{
+    position: relative;
+  }
+  .button-salidas-ultimas{
+    position: absolute;
+    font-size: 14px;
+    left: 19rem;
+    height: 60%;
+    width: 60%;
+    top: 15px;
+    padding: 0;
+  }
+
+  .img-user{
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/logouser.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: 70px;
+  }
+  @media (max-width: 1000px){
+    .img-user{
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/logouser.jpeg);
+      background-size: cover;
+      border-radius: 50%;
+      margin-left: 90px;
+    }
+    
+  }
+  .payment-form {
+    width: 300px;
+    margin: auto;
+  }
+  
+  .payment-form h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type='text'] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  .form-buy{
+    height: 50%;
+  }
+  .form-position{
+    position: relative;
+  }
+  .dollar{
+   position: absolute;
+   top: -15px; 
+   right: -20px;
+  }
+  .dollar-tranferencia{
+    position: absolute;
+    top: 9rem;
+   right: 26.1rem;
+  }
+  .dollar-tarjeta{
+    position: absolute;
+    top: 14.2rem;
+   right: 26.1rem;
+  }
+ 
+  
+  
